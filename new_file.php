@@ -2,8 +2,6 @@
 
 //decalring a varible on php
 
-
-
 //creating a funtion 
 function greet(){
     echo "Hello world";
@@ -56,7 +54,7 @@ $person->name = "John";
 //call the method on the object..
 $person->sayhello();
 
-
+///styles.......
 
 greet('jane');
 echo $message;
