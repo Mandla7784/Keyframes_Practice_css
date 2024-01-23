@@ -28,6 +28,37 @@ greet()
 echo $myVariable;
 
 
+
+// URL of the image
+$imageUrl = 'https://example.com/image.jpg';
+
+// Make the API request
+$imageData = file_get_contents($imageUrl);
+
+// Save the image to a file
+file_put_contents('downloaded_image.jpg', $imageData);
+
+// URL of the image
+$imageUrl = 'https://example.com/image.jpg';
+
+// Initialize cURL session
+$ch = curl_init($imageUrl);
+
+// Set options for the cURL session
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+// Execute the cURL session
+$imageData = curl_exec($ch);
+
+// Close the cURL session
+curl_close($ch);
+
+// Save the image to a file
+file_put_contents('downloaded_image.jpg', $imageData);
+
+
+
+
 //decalring a variable..
 $message = "Hi John";
 //create a function...
