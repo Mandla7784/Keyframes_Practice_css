@@ -2,6 +2,7 @@ body{
     display: flex;
     flex-flow: center;
     background: linear-gradient(80deg,rgb(153, 172, 153), rgb(38, 224, 221));
+    margin:0;
 }
 /*Curtom class styles for universal button*/
 .custom-btn{
